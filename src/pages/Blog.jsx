@@ -37,11 +37,17 @@ export default function Blog() {
             </div>
             {blogs.map((blog) => (
             <div className="col-12 col-md-4" key={blog.id}>
-            <div className="card">
-                <div className="card-body d-flex align-items-center justify-content-between">
-                    <h2 className='fs-5 fw-semibold'>{blog.blogTitle}</h2>
-                    <div>
-                        {card.icon}
+                <div className="card bg-transparent">
+
+                    <div className="card-body d-flex">
+                        <div className="d-flex flex-column gap-1">
+                            <h3 className='fs-5 fw-semibold'>
+                                {blog.blogTitle}
+                            </h3>
+                            <p>
+                                {blog.blogDate}
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
