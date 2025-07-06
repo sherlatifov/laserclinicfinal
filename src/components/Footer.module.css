@@ -1,0 +1,73 @@
+.footerTopBtn {
+  padding: 10px 24px;
+  border: 1px solid rgba(255, 255, 255, 1);
+  border-radius: 0.5rem;
+  color: rgba(255, 255, 255, 1);
+}
+.footerTopContacts ul li {
+  border-right: 1px solid white;
+}
+.footerSocials a {
+  border-radius: 8px;
+  background-color: rgba(69, 69, 69, 1);
+}
+.footerNavTitle {
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #fff;
+}
+.footerNav li a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #fff;
+  line-height: 20px;
+}
+
+.footerCard {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-radius: 12px;
+  padding: 16px;
+  background-color: rgba(69, 69, 69, 1);
+}
+.footerCard h2 {
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 140%;
+  letter-spacing: 0%;
+  color: rgba(255, 255, 255, 1);
+}
+.footerCard a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 24px;
+  gap: 8px;
+  background: rgba(198, 38, 40, 1);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: Шрифт/L;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: rgba(255, 255, 255, 1);
+  border-radius: 8px;
+}
+.footerBorder {
+  border-top: 1px solid rgba(82, 81, 82, 1);
+  border-bottom: 1px solid rgba(82, 81, 82, 1);
+;
+}
+.footerBtmLink {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  opacity: 0.5;
+}

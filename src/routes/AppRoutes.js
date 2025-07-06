@@ -1,0 +1,30 @@
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Home from '../pages/Home';
+import Specialists from '../pages/Specialists';
+import About from '../pages/About';
+import Blog from '../pages/Blog';
+import Discount from '../pages/Discount';
+import Contact from '../pages/Contact';
+import Policy from '../pages/Policy';
+import AboutOrganization from '../pages/AboutOrganization';
+import TaxDeduction from '../pages/TaxDeduction';
+import Auth from '../pages/Auth/Auth';
+
+export default function AppRoutes() {
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/specialists" element={<Specialists />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/blog" element={<Blog />} />
+      <Route path="/discount" element={<Discount />} />
+      <Route path="/contacts" element={<Contact />} />
+      <Route path="/policy" element={<Policy />} />
+      <Route path="/about-organization" element={<AboutOrganization />} />
+      <Route path="/tax" element={<TaxDeduction />} />
+
+      <Route path="/acount" element={<Auth />} />
+    </Routes>
+  );
+}
