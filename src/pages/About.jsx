@@ -32,7 +32,7 @@ export default function About() {
                 </p>
               </div>
             </div>
-            <div className='h-100 w-100 d-flex justify-content-md-center justify-content-start align-items-center`'>
+            <div className='h-100 w-100 d-flex justify-content-md-center justify-content-start align-items-center'>
               <div className="d-flex flex-column">
                 <h2>
                   200 000+
