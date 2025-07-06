@@ -6,10 +6,34 @@ export default function Blog() {
     {
         id: 1,
         blogTitle: "Запуск новой услуги: лазерное омоложение Fotona 4D",
-        blogDate: "Для жалоб, предложений и оценки сервиса",
-        author: "+7 (XXX) XXX-XX-XX ",
+        blogDate: "15 апреля 2025",
+        author: "Марина Васюкова",
         authorImg: "report@laserclinic.ru",
-        image: "https://randomuser.me/api/portraits/women/1.jpg",
+        image: "../assets/blog/blogImg/img-1.png",
+    },
+    {
+        id: 2,
+        blogTitle: "Подарки к Новому году: акция «2 процедуры по цене 1»",
+        blogDate: "1 декабря 2024 – 15 января 2025",
+        author: "Марина Васюкова",
+        authorImg: "report@laserclinic.ru",
+        image: "../assets/blog/blogImg/img-2.png",
+    },
+    {
+        id: 3,
+        blogTitle: "Открытие нового филиала в Москве – теперь и в столице!",
+        blogDate: "20 декабря 2023",
+        author: "Марина Васюкова",
+        authorImg: "report@laserclinic.ru",
+        image: "../assets/blog/blogImg/img-3.png",
+    },
+    {
+        id: 3,
+        blogTitle: "Наши врачи – спикеры международного конгресса",
+        blogDate: "5 ноября 2024",
+        author: "Марина Васюкова",
+        authorImg: "report@laserclinic.ru",
+        image: "../assets/blog/blogImg/img-4.png",
     },
     ];
   return (
@@ -38,7 +62,7 @@ export default function Blog() {
             {blogs.map((blog) => (
             <div className="col-12 col-md-4" key={blog.id}>
                 <div className="card bg-transparent">
-
+                    <img className='img-fluid rounded-4' src={card.image} alt="" />
                     <div className="card-body d-flex">
                         <div className="d-flex flex-column gap-1">
                             <h3 className='fs-5 fw-semibold'>
