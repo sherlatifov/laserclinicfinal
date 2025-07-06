@@ -9,9 +9,9 @@ export default function Header() {
   return (
     <header className={`${styles.header} ${menuOpen ? styles.navExpanded : 'bg-white'}`}>
       <nav className="navbar navbar-expand-lg">
-        <div className="container-fluid d-flex align-items-center">
-          <Link className="">
-            <svg width="220" height="18" viewBox="0 0 220 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div className="container-fluid">
+          <Link className="navbar-brand mt-2">
+            <div className="d-block"><svg width="220" height="18" viewBox="0 0 220 18" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_356_2412)">
               <path d="M18.1085 16.4985C18.1085 16.8109 18.0015 17.0779 17.7877 17.2996C17.5738 17.5219 17.3109 17.6328 16.9983 17.6328H14.7044C14.3921 17.6328 14.1251 17.5219 13.9031 17.2996C13.681 17.0779 13.57 16.8109 13.57 16.4985V3.77156H10.6351C9.86198 3.77156 9.18793 3.98962 8.6124 4.42521C8.03692 4.86097 7.65063 5.44861 7.45334 6.18867L4.69056 16.4985C4.60856 16.8273 4.42782 17.0987 4.14817 17.312C3.86852 17.526 3.5725 17.6328 3.26028 17.6328H0.818554C0.539073 17.6328 0.321019 17.5302 0.165089 17.3248C0.00880742 17.1189 -0.0365989 16.8848 0.0292226 16.6217L3.08764 5.05403C3.9097 1.92978 6.57352 0.367708 11.0788 0.367708H17.0971C17.3765 0.367708 17.615 0.482595 17.8121 0.713184C18.0094 0.943367 18.1085 1.20648 18.1085 1.50231V16.4985Z" fill="#464344"/>
               <path d="M27.5306 6.18867L26.4699 10.0612H34.1404V3.77156H30.712C29.9393 3.77156 29.2652 3.98962 28.6896 4.42521C28.1142 4.86097 27.7277 5.44861 27.5306 6.18867ZM20.131 16.5232L23.1648 5.05403C23.987 1.92978 26.6507 0.367708 31.1561 0.367708H37.6426C37.939 0.367708 38.1854 0.478722 38.3829 0.700659C38.58 0.922777 38.6787 1.18184 38.6787 1.47766V16.5232C38.6787 16.8356 38.5677 17.0987 38.3458 17.312C38.1238 17.526 37.8567 17.6328 37.5443 17.6328H35.2749C34.9463 17.6328 34.6747 17.526 34.4611 17.312C34.2474 17.0987 34.1404 16.8273 34.1404 16.4985V13.4649H25.5818L24.768 16.4985C24.6859 16.8273 24.5048 17.0987 24.2251 17.312C23.9458 17.526 23.6498 17.6328 23.3376 17.6328H20.9696C20.6574 17.6328 20.4185 17.526 20.2544 17.312C20.09 17.0987 20.0488 16.8356 20.131 16.5232Z" fill="#464344"/>
@@ -30,14 +30,20 @@ export default function Header() {
               <rect width="220" height="17.463" fill="white" transform="translate(0 0.268482)"/>
               </clipPath>
               </defs>
-            </svg>
+            </svg></div>
           </Link>
           <button className="navbar-toggler" type="button" onClick={() => setMenuOpen(!menuOpen)} data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             Меню
             <span className="navbar-toggler-icon ms-2"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav gap-2 mt-3 me-auto">
+            <ul className="navbar-nav gap-4 mt-3 ms-3 me-auto">
+              <li className='nav-item'>
+                <NavLink className={`${styles.navLink}`} to="/specialists">
+                  Услуги
+                  <span className="navbar-toggler-icon ms-2"></span>
+                </NavLink>
+              </li>
               <li className="nav-item">
                 <NavLink className={`${styles.navLink}`} to="/specialists">Специалисты</NavLink>
               </li>
