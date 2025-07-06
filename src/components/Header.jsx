@@ -8,9 +8,9 @@ export default function Header() {
 
   return (
     <header className={`${styles.header} ${menuOpen ? styles.navExpanded : 'bg-white'}`}>
-      <nav className="navbar navbar-expand-lg">
+      <nav className="navbar navbar-expand-lg py-4">
         <div className="container-fluid">
-          <Link className="navbar-brand mt-2">
+          <Link className="navbar-brand ">
             <div className="d-block"><svg width="220" height="18" viewBox="0 0 220 18" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_356_2412)">
               <path d="M18.1085 16.4985C18.1085 16.8109 18.0015 17.0779 17.7877 17.2996C17.5738 17.5219 17.3109 17.6328 16.9983 17.6328H14.7044C14.3921 17.6328 14.1251 17.5219 13.9031 17.2996C13.681 17.0779 13.57 16.8109 13.57 16.4985V3.77156H10.6351C9.86198 3.77156 9.18793 3.98962 8.6124 4.42521C8.03692 4.86097 7.65063 5.44861 7.45334 6.18867L4.69056 16.4985C4.60856 16.8273 4.42782 17.0987 4.14817 17.312C3.86852 17.526 3.5725 17.6328 3.26028 17.6328H0.818554C0.539073 17.6328 0.321019 17.5302 0.165089 17.3248C0.00880742 17.1189 -0.0365989 16.8848 0.0292226 16.6217L3.08764 5.05403C3.9097 1.92978 6.57352 0.367708 11.0788 0.367708H17.0971C17.3765 0.367708 17.615 0.482595 17.8121 0.713184C18.0094 0.943367 18.1085 1.20648 18.1085 1.50231V16.4985Z" fill="#464344"/>
@@ -37,36 +37,36 @@ export default function Header() {
             <span className="navbar-toggler-icon ms-2"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav gap-4 mt-3 ms-3 me-auto">
+            <ul className="navbar-nav gap-4 mt-2 ms-3 me-auto">
               <li className='nav-item'>
-                <NavLink className={`${styles.navLink}`} to="/specialists">
+                <NavLink className="fs-6 fw-medium text-dark" to="/">
                   Услуги
                   <span className="navbar-toggler-icon ms-2"></span>
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className={`${styles.navLink}`} to="/specialists">Специалисты</NavLink>
+                <NavLink className="fs-6 fw-medium text-dark" to="/specialists">Специалисты</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className={styles.navLink} to="/about">О клинике</NavLink>
+                <NavLink className="fs-6 fw-medium text-dark" to="/about">О клинике</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className={styles.navLink} to="/blog">Блог</NavLink>
+                <NavLink className="fs-6 fw-medium text-dark" to="/blog">Блог</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className={styles.navLink} to="/reviews">Отзывы</NavLink>
+                <NavLink className="fs-6 fw-medium text-dark" to="/reviews">Отзывы</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className={styles.navLink} to="/discount">Акции и скидки</NavLink>
+                <NavLink className="fs-6 fw-medium text-dark" to="/discount">Акции и скидки</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className={styles.navLink} to="/contacts">Контакты</NavLink>
+                <NavLink className="fs-6 fw-medium text-dark" to="/contacts">Контакты</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className={styles.navLink} to="/faq">FAQ</NavLink>
+                <NavLink className="fs-6 fw-medium text-dark" to="/faq">FAQ</NavLink>
               </li>
             </ul>
-            <ul className='navbar-nav gap-2 mt-3'>
+            <ul className='navbar-nav gap-2'>
               <li className="nav-item">
                 <div className="input-group">
                     <span class="input-group-text border border-secondary border-end-0 bg-white" id="icon-select">
