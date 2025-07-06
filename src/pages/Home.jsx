@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styles from '../styles/Home.module.css';
 import bgVideo from '../assets/bg-hero.mp4';
-import bgImg from '../assets/bg-img.png';
+import personImg from '../assets/bg-img.png';
 
 import YandexMap from '../components/YandexMap'
 
@@ -35,36 +35,49 @@ export default function Home() {
   ];
   return (
     <div>
-        <div className={styles.hero}>
-  <video className={styles.video} src={bgVideo} autoPlay muted loop playsInline />
-  <div className={styles.heroOverlay}>
-    <div className="container-fluid">
-      <div className={`row justify-content-start align-items-center ${styles.heroContentWrapper}`}>
-        <div className={`col-lg-6 ${styles.heroContent}`}>
-          <h1 className={styles.heroContentTitle}>
-            Новая эра лезерной косметологии
-          </h1>
-          <p className='text-white'>
-            Используем передовые технологии и опыт экспертов, чтобы помочь вам выглядеть и чувствовать себя лучше каждый день.
-          </p>
-          <div className="btn-group flex-column flex-sm-row gap-2 mt-3">
-            <Link className='btn btn-danger'>
-              Записаться онлайн
-            </Link>
-            <Link className='btn btn-outline-danger text-white'>
-              Получить консультацию
-            </Link>
-          </div>
-        </div>
-        <div className='col-6'>
-          <div>
-            <img src={bgImg} alt="" className={`${styles.heroImg}`} />
+      <div className={`${styles.hero} position-relative text-white`}>
+      {/* Видео-фон */}
+      <video
+        className={`${styles.video}`}
+        src={bgVideo}
+        autoPlay
+        muted
+        loop
+        playsInline
+      />
+
+      {/* Затемнение */}
+      <div className={`${styles.heroOverlay}`}></div>
+
+      {/* Контент */}
+        <div className="container position-relative z-3 h-100">
+          <div className="row flex-column-reverse flex-lg-row h-100 align-items-center">
+            {/* Текст слева */}
+            <div className={`${styles.heroText} col-md-6 bg-white py-5`}>
+              <h1 className="display-4 fw-bold text-dark">Новая эра лазерной косметологии</h1>
+              <p className="lead text-dark">Используем передовые технологии и опыт экспертов, чтобы помочь вам выглядеть и чувствовать себя лучше каждый день.</p>
+              <div className="btn-group flex-column w-100 gap-2">
+                <button className='btn btn-danger'>
+                  Записаться онлайн
+                </button>
+                <button className='btn btn-outline-danger'>
+                  Записаться онлайн
+                </button>
+              </div>
+            </div>
+
+            {/* Фото справа, прижатое к низу */}
+            <div className="col-md-6 d-flex justify-content-end align-items-end">
+              <img
+                src={personImg}
+                alt="Доктор"
+                className="hero-person-img img-fluid rounded-circle"
+              />
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</div>
+
 
         <div>
           <h1 className='section-title'>
