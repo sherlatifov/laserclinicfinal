@@ -62,7 +62,7 @@ export default function Blog() {
             {blogs.map((blog) => (
             <div className="col-12 col-md-4" key={blog.id}>
                 <div className="card bg-transparent">
-                    <img className='img-fluid rounded-4' src={card.image} alt="" />
+                    <img className='img-fluid rounded-4' src={blog.image} alt="" />
                     <div className="card-body d-flex">
                         <div className="d-flex flex-column gap-1">
                             <h3 className='fs-5 fw-semibold'>
