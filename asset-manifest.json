@@ -1,10 +1,16 @@
 {
   "files": {
-    "main.css": "/laserclinicfinal/static/css/main.4b06b2ce.css",
-    "main.js": "/laserclinicfinal/static/js/main.0640193f.js",
+    "main.css": "/laserclinicfinal/static/css/main.f10b7d56.css",
+    "main.js": "/laserclinicfinal/static/js/main.cbedc588.js",
     "static/js/453.a3c1d153.chunk.js": "/laserclinicfinal/static/js/453.a3c1d153.chunk.js",
     "static/media/bg-hero.mp4": "/laserclinicfinal/static/media/bg-hero.1acd5d049ea6d1554f1b.mp4",
     "static/media/img.png": "/laserclinicfinal/static/media/img.c2eb473b56801fa09e9e.png",
+    "static/media/topImg.png": "/laserclinicfinal/static/media/topImg.b52326a29fb4794583b5.png",
+    "static/media/img2.png": "/laserclinicfinal/static/media/img2.770c8441271a44648c0f.png",
+    "static/media/img3.png": "/laserclinicfinal/static/media/img3.875b19295b11f448accd.png",
+    "static/media/img1.png": "/laserclinicfinal/static/media/img1.f47511b0069b77501a74.png",
+    "static/media/img4.png": "/laserclinicfinal/static/media/img4.571f5b6e3350d6bb73b7.png",
+    "static/media/img5.png": "/laserclinicfinal/static/media/img5.e98cf96d1d7d4951a6e4.png",
     "static/media/bg-img.png": "/laserclinicfinal/static/media/bg-img.2b3eb0d6b3624be1379b.png",
     "static/media/1.png": "/laserclinicfinal/static/media/1.95da6d28476a9f69fb26.png",
     "static/media/3.png": "/laserclinicfinal/static/media/3.b7a62926f63c6b3f5f68.png",
@@ -13,12 +19,12 @@
     "static/media/bootstrap-icons.woff?": "/laserclinicfinal/static/media/bootstrap-icons.1295669cd4e305c97f2c.woff",
     "static/media/bootstrap-icons.woff2?": "/laserclinicfinal/static/media/bootstrap-icons.92ea18a81d737146ff04.woff2",
     "index.html": "/laserclinicfinal/index.html",
-    "main.4b06b2ce.css.map": "/laserclinicfinal/static/css/main.4b06b2ce.css.map",
-    "main.0640193f.js.map": "/laserclinicfinal/static/js/main.0640193f.js.map",
+    "main.f10b7d56.css.map": "/laserclinicfinal/static/css/main.f10b7d56.css.map",
+    "main.cbedc588.js.map": "/laserclinicfinal/static/js/main.cbedc588.js.map",
     "453.a3c1d153.chunk.js.map": "/laserclinicfinal/static/js/453.a3c1d153.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4b06b2ce.css",
-    "static/js/main.0640193f.js"
+    "static/css/main.f10b7d56.css",
+    "static/js/main.cbedc588.js"
   ]
 }
