@@ -103,7 +103,6 @@ export default function Home() {
             Опытные врачи с индивидуальным подходом к каждому
           </h1>
           <div>
-
           </div>
           <div className='text-center w-100 w-lg-auto'>
             <Link className='btn btn-dark w-100' to="/specialists">

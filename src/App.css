@@ -53,6 +53,17 @@ h1, h2, h3, h4, h5, a, p, button, input, section, option {
   background-color: rgba(61, 60, 61, 1);
 }
 
+input, textarea, select {
+  border: 1px solid rgba(137, 135, 137, 1)!important;
+  font-size: 1rem!important;
+  font-weight: 500!important;
+  color: rgba(137, 135, 137, 1);
+}
+input.form-control:focus, textarea:focus, select:focus {
+  border: 1px solid black!important;
+  box-shadow: 0 0 0 0.1rem rgba(198, 38, 40, 1)!important; /* мягкое свечение */
+}
+
 .fullscreen-collapse {
   position: fixed;
   top: 0;
@@ -92,3 +103,18 @@ h1, h2, h3, h4, h5, a, p, button, input, section, option {
   padding: 0 100px!important;
 }
 */
+.btn-red {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 24px;
+  color: white;
+  border: none!important;
+  background: rgba(198, 38, 40, 1);
+  border-radius: 8px;
+}
+
+.noresize {
+  resize: none;
+}

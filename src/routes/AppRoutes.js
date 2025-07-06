@@ -9,6 +9,8 @@ import Contact from '../pages/Contact';
 import Policy from '../pages/Policy';
 import AboutOrganization from '../pages/AboutOrganization';
 import TaxDeduction from '../pages/TaxDeduction';
+import FAQ from '../pages/FAQ';
+import Career from '../pages/Career';
 import Auth from '../pages/Auth/Auth';
 
 export default function AppRoutes() {
@@ -23,6 +25,8 @@ export default function AppRoutes() {
       <Route path="/policy" element={<Policy />} />
       <Route path="/about-organization" element={<AboutOrganization />} />
       <Route path="/tax" element={<TaxDeduction />} />
+      <Route path="/faq" element={<FAQ />} />
+      <Route path="/career" element={<Career />} />
 
       <Route path="/acount" element={<Auth />} />
     </Routes>
