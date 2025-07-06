@@ -99,7 +99,7 @@ export default function Header() {
                 </div>
               </li>
               <li className="nav-item">
-                <NavLink className="btn btn-lg btn-dark px-4 py-1 w-100 border border-2 border-dark" to="/login">Войти</NavLink>
+                <NavLink className="btn btn-lg btn-dark px-4 py-1 w-100 border border-2 border-dark" to="/acount">Войти</NavLink>
               </li>
             </ul>
           </div>

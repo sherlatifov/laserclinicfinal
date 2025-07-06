@@ -1,13 +1,123 @@
 
 import Collapse from '../components/Collapse/Collapse';
 import cardImg from '../assets/career/img.png';
+import topImg from '../assets/career/topImg.png';
 import { Link } from 'react-router-dom';
 import styles from '../styles/Career.module.css';
 
 export default function Career() {
     
   return (
+    <>
     <div className='container-fluid'>
+        <div>
+            <h1 className='section-title'>
+                Карьера в ЛазерКлиник
+            </h1>
+            <div className="row d-flex flex-column-reverse flex-lg-column">
+                <div className="row col-12">
+                    <div className="col-12 col-lg-6">
+                        <p className='fs-5 fw-semibold'>
+                            Станьте частью нашей команды!
+                        </p>
+                    </div>
+                    <div className="col-12 col-lg-6">
+                        <p className='fs-6 fw-medium'>
+                            Мы объединяем профессионалов, для которых эстетическая медицина – это наука, искусство и призвание. Если вы разделяете наш подход к качеству и заботе о пациентах – давайте развиваться вместе!
+                        </p>
+                    </div>
+                </div>
+                <div className='col-12'>
+                    <div className={` ${styles.topCard} card`}>
+                        <div className="card-body p-0">
+                            <img src={topImg} alt="" className={` ${styles.topCardImg} img-fluid`}/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h1 className='section-title'>Как присоединиться к команде?</h1>
+            <div className='row g-3'>
+                <div className='col-12 col-lg-3'>
+                    <div className="card h-100">
+                        <div className="card-body d-flex flex-column justify-content-between gap-5 pt-4 px-4">
+                            <div className='d-flex justify-content-between'>
+                                <h5 className='card-title fs-2 fw-semibold'>
+                                    Отправьте резюме
+                                </h5>
+                                <h5 className='fs-2 fw-semibold text-dark text-opacity-25'>
+                                    01
+                                </h5>
+                            </div>
+                            <p className='card-text fw-medium'>
+                                Пришлите ваше резюме и портфолио (если требуется) на <Link>hr@lasclinic.ru</Link>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div className='col-12 col-lg-3'>
+                    <div className="card h-100">
+                        <div className="card-body d-flex justify-content-between flex-column gap-5 pt-4 px-4">
+                            <div className='d-flex justify-content-between'>
+                                <h5 className='card-title fs-2 fw-semibold'>
+                                    Участвуйте в собеседовании
+                                </h5>
+                                <h5 className='fs-2 fw-semibold text-dark text-opacity-25'>
+                                    02
+                                </h5>
+                            </div>
+                            <p className='card-text fw-medium'>
+                                Очная встреча с руководителем направления 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div className='col-12 col-lg-3'>
+                    <div className="card h-100">
+                        <div className="card-body d-flex justify-content-between flex-column gap-5 pt-4 px-4">
+                            <div className='d-flex justify-content-between'>
+                                <h5 className='card-title fs-2 fw-semibold'>
+                                    Пройдите адаптацию
+                                </h5>
+                                <h5 className='fs-2 fw-semibold text-dark text-opacity-25'>
+                                    03
+                                </h5>
+                            </div>
+                            <p className='card-text fw-medium'>
+                                3 месяца с наставником обучение стандартам и работе на оборудовании
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div className='col-12 col-lg-3'>
+                    <div className="card h-100">
+                        <div className="card-body d-flex justify-content-between flex-column gap-5 pt-4 px-4">
+                            <div className='d-flex justify-content-between'>
+                                <h5 className='card-title fs-2 fw-semibold'>
+                                    Добро пожаловать!
+                                </h5>
+                                <h5 className='fs-2 fw-semibold text-dark text-opacity-25'>
+                                    04
+                                </h5>
+                            </div>
+                            <p className='card-text fw-medium align-content-end'>
+                                Доступ к закрытым тренингам, участие в конференциях за счет клиники и расширенный соцпакет
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div className='bg-dark'>
+        <div className="container-fluid">
+        <h1 className='section-title text-light'>
+            Актуальные вакансии
+        </h1>
+        </div>
+    </div>
+    <div className="container-fluid">
         <div class={` ${styles.btmFormCard} card mt-5`}>
             <div class="row g-0 d-flex align-items-center">
                 <div class="col-12 col-md-6 h-100">
@@ -58,5 +168,6 @@ export default function Career() {
             </div>
         </div>
     </div>
+    </>
   );
 };

@@ -135,7 +135,7 @@ const Footer = () => {
                             <h2>
                                 Карьера в ЛазерКлиник
                             </h2>
-                            <Link className=''>Смотреть вакансии</Link>
+                            <Link className='btn-red' to="/career">Смотреть вакансии</Link>
                         </div>
                     </div>
                     <div className="d-none d-md-block col-12 col-md-12 col-lg-6">

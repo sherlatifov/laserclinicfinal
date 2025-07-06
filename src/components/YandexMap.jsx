@@ -41,9 +41,41 @@ export default function YandexMap() {
   }, []);
 
   return (
-    <div>
-      <h2>Яндекс Карта без сторонней библиотеки</h2>
-      <div ref={mapRef} style={{ width: '100%', height: '620px' }}/>
+    <div style={{ position: 'relative' }}>
+  {/* Контейнер карты */}
+  <div ref={mapRef} style={{ width: '100%', height: '620px' }} />
+
+  {/* Форма поверх карты */}
+  <div
+    className="position-absolute z-0 p-4 rounded shadow start-50 translate-middle-x translate-md-none start-md-10"
+    style={{
+      top: '20%',
+      width: '100%',
+      maxWidth: '704px',
+      background: 'radial-gradient(50% 50% at 50% 50%, #3D3C3D 0%, #262626 100%)'
+    }}
+  >
+    <h5 className="text-light fs-2 fw-semibold">Контакты</h5>
+    <div className="card bg-transparent">
+      <div className="card-body">
+        <form>
+          <div className="mb-2">
+            <input type="text" className="form-control" placeholder="Ваше имя" />
+          </div>
+          <div className="mb-2">
+            <input type="tel" className="form-control" placeholder="Телефон" />
+          </div>
+          <div className="mb-2">
+            <textarea className="form-control" rows="3" placeholder="Сообщение" />
+          </div>
+          <button type="submit" className="btn-red">
+            Отправить
+          </button>
+        </form>
+      </div>
     </div>
+  </div>
+</div>
+
   );
 }
