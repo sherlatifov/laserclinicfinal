@@ -9,7 +9,7 @@ export default function Blog() {
         blogDate: "15 апреля 2025",
         author: "Марина Васюкова",
         authorImg: "report@laserclinic.ru",
-        image: "../assets/blog/blogImg/img-1.png",
+        image: "/images/blog/blogImg/img-1.png",
     },
     {
         id: 2,
@@ -17,7 +17,7 @@ export default function Blog() {
         blogDate: "1 декабря 2024 – 15 января 2025",
         author: "Марина Васюкова",
         authorImg: "report@laserclinic.ru",
-        image: "../assets/blog/blogImg/img-2.png",
+        image: "/images/blog/blogImg/img-2.png",
     },
     {
         id: 3,
@@ -25,7 +25,7 @@ export default function Blog() {
         blogDate: "20 декабря 2023",
         author: "Марина Васюкова",
         authorImg: "report@laserclinic.ru",
-        image: "../assets/blog/blogImg/img-3.png",
+        image: "/images/blog/blogImg/img-3.png",
     },
     {
         id: 3,
@@ -33,49 +33,32 @@ export default function Blog() {
         blogDate: "5 ноября 2024",
         author: "Марина Васюкова",
         authorImg: "report@laserclinic.ru",
-        image: "../assets/blog/blogImg/img-4.png",
+        image: "/images/blog/blogImg/img-4.png",
     },
     ];
   return (
-    <div>
         <div className='container-fluid'>
             <h1 className='section-title'>
                 Блог
             </h1>
             <div className='row'>
-                <div className="col-12 col-lg-6">
+                {blogs.map((blog) => (
+                <div className="col-12 col-md-6" key={blog.id}>
                     <div className="card bg-transparent">
-
+                        <img className='img-fluid rounded-4' src={blog.image} alt="" />
                         <div className="card-body d-flex">
                             <div className="d-flex flex-column gap-1">
                                 <h3 className='fs-5 fw-semibold'>
-                                    Запуск новой услуги: лазерное омоложение Fotona 4D
+                                    {blog.blogTitle}
                                 </h3>
                                 <p>
-                                    15 апреля 2025
+                                    {blog.blogDate}
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            {blogs.map((blog) => (
-            <div className="col-12 col-md-4" key={blog.id}>
-                <div className="card bg-transparent">
-                    <img className='img-fluid rounded-4' src={blog.image} alt="" />
-                    <div className="card-body d-flex">
-                        <div className="d-flex flex-column gap-1">
-                            <h3 className='fs-5 fw-semibold'>
-                                {blog.blogTitle}
-                            </h3>
-                            <p>
-                                {blog.blogDate}
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            ))}
+                ))}
         </div>
     </div>
   );
