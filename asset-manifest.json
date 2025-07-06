@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.2a6702f8.css",
-    "main.js": "/static/js/main.2ca9c5e7.js",
-    "static/js/453.a3c1d153.chunk.js": "/static/js/453.a3c1d153.chunk.js",
-    "static/media/1.png": "/static/media/1.95da6d28476a9f69fb26.png",
-    "static/media/3.png": "/static/media/3.b7a62926f63c6b3f5f68.png",
-    "static/media/2.png": "/static/media/2.8588b0088386a1f2a211.png",
-    "static/media/4.png": "/static/media/4.91780a43f0a7a51901d1.png",
-    "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.1295669cd4e305c97f2c.woff",
-    "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.92ea18a81d737146ff04.woff2",
-    "index.html": "/index.html",
-    "main.2a6702f8.css.map": "/static/css/main.2a6702f8.css.map",
-    "main.2ca9c5e7.js.map": "/static/js/main.2ca9c5e7.js.map",
-    "453.a3c1d153.chunk.js.map": "/static/js/453.a3c1d153.chunk.js.map"
+    "main.css": "/laserclinicfinal/static/css/main.0acbd809.css",
+    "main.js": "/laserclinicfinal/static/js/main.d750645e.js",
+    "static/js/453.a3c1d153.chunk.js": "/laserclinicfinal/static/js/453.a3c1d153.chunk.js",
+    "static/media/1.png": "/laserclinicfinal/static/media/1.95da6d28476a9f69fb26.png",
+    "static/media/3.png": "/laserclinicfinal/static/media/3.b7a62926f63c6b3f5f68.png",
+    "static/media/2.png": "/laserclinicfinal/static/media/2.8588b0088386a1f2a211.png",
+    "static/media/4.png": "/laserclinicfinal/static/media/4.91780a43f0a7a51901d1.png",
+    "static/media/bootstrap-icons.woff?": "/laserclinicfinal/static/media/bootstrap-icons.1295669cd4e305c97f2c.woff",
+    "static/media/bootstrap-icons.woff2?": "/laserclinicfinal/static/media/bootstrap-icons.92ea18a81d737146ff04.woff2",
+    "index.html": "/laserclinicfinal/index.html",
+    "main.0acbd809.css.map": "/laserclinicfinal/static/css/main.0acbd809.css.map",
+    "main.d750645e.js.map": "/laserclinicfinal/static/js/main.d750645e.js.map",
+    "453.a3c1d153.chunk.js.map": "/laserclinicfinal/static/js/453.a3c1d153.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2a6702f8.css",
-    "static/js/main.2ca9c5e7.js"
+    "static/css/main.0acbd809.css",
+    "static/js/main.d750645e.js"
   ]
 }
