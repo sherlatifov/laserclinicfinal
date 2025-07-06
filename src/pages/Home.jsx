@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styles from '../styles/Home.module.css';
 import bgVideo from '../assets/bg-hero.mp4';
+import bgImg from '../assets/bg-img.png';
 
 import YandexMap from '../components/YandexMap'
 
@@ -35,31 +36,36 @@ export default function Home() {
   return (
     <div>
         <div className={styles.hero}>
-          <video className={styles.video} src={bgVideo} autoPlay muted loop playsInline/>
-          <div className={styles.heroOverlay}>
-            <div className="container-fluid">
-            <div className={`${styles.heroContent} w-50`}>
-              <h1 className={`${styles.heroContentTitle}`}>
-                Новая эра лезерной косметологии
-              </h1>
-              <p className='text-white'>
-                Используем передовые технологии и опыт экспертов, чтобы помочь вам выглядеть и чувствовать себя лучше каждый день.
-              </p>
-              <div className="btn-group">
-                <Link className='btn btn-danger'>
-                  Записаться онлайн
-                </Link>
-                <Link className='btn btn-outline-danger'>
-                  Получить консультацию
-                </Link>
-              </div>
-            </div>
-            <div className='bg-white'>
-              2
-            </div>
-            </div>
+  <video className={styles.video} src={bgVideo} autoPlay muted loop playsInline />
+  <div className={styles.heroOverlay}>
+    <div className="container-fluid">
+      <div className={`row justify-content-start align-items-center ${styles.heroContentWrapper}`}>
+        <div className={`col-lg-6 ${styles.heroContent}`}>
+          <h1 className={styles.heroContentTitle}>
+            Новая эра лезерной косметологии
+          </h1>
+          <p className='text-white'>
+            Используем передовые технологии и опыт экспертов, чтобы помочь вам выглядеть и чувствовать себя лучше каждый день.
+          </p>
+          <div className="btn-group flex-column flex-sm-row gap-2 mt-3">
+            <Link className='btn btn-danger'>
+              Записаться онлайн
+            </Link>
+            <Link className='btn btn-outline-danger text-white'>
+              Получить консультацию
+            </Link>
           </div>
         </div>
+        <div className='col-6'>
+          <div>
+            <img src={bgImg} alt="" className={`${styles.heroImg}`} />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
         <div>
           <h1 className='section-title'>
             Современные методики и опытный персонал для вашей красоты

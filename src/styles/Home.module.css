@@ -17,23 +17,29 @@
     position: relative;
     z-index: 2;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4); /* затемнение */
+    background: rgba(0, 0, 0, 0.6); /* затемнение */
     display: flex;
     align-items: center;
 }
 .heroContent {
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: ;
-    width: 100%;
+    width: 50%;
     height:fit-content;
     align-self: ;
-    background-color: red;
     z-index: 1000;
+}
+.heroContentWrapper {
+position: relative;
+  min-height: 100vh;
 }
 .heroContentTitle {
     font-size: clamp(2.25rem, 5vw, 1000px);
     font-weight: 700;
     color: white;
+}
+.heroImg {
+    object-fit: contain;
 }
