@@ -3,7 +3,7 @@ import styles from './Footer.module.css';
 
 const Footer = () => {
   return (
-    <footer className="d-flex flex-column" style={{background: `radial-gradient(50% 50% at 50% 50%, #3D3C3D 0%, #262626 100%), #FFFFFF`}}>
+    <footer className="mt-auto d-flex flex-column w-100" style={{background: `radial-gradient(50% 50% at 50% 50%, #3D3C3D 0%, #262626 100%), #FFFFFF`}}>
         <div className="container-fluid">
             <div className="navbar navbar-expand-lg">
                 <ul className="navbar-nav w-100 align-items-center gap-2">

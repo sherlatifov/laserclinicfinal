@@ -13,6 +13,7 @@ import AboutOrganization from '../pages/AboutOrganization';
 import TaxDeduction from '../pages/TaxDeduction';
 import FAQ from '../pages/FAQ';
 import Career from '../pages/Career';
+import Reviews from '../pages/Reviews';
 import Auth from '../pages/Auth/Auth';
 
 export default function AppRoutes() {
@@ -31,6 +32,7 @@ export default function AppRoutes() {
       <Route path="/tax" element={<TaxDeduction />} />
       <Route path="/faq" element={<FAQ />} />
       <Route path="/career" element={<Career />} />
+      <Route path="/reviews" element={<Reviews />} />
 
       <Route path="/acount" element={<Auth />} />
     </Routes>

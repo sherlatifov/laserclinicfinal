@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import ShoortInfo from '../components/PageParts/ShortInfo/ShortInfo';
 import YandexMap from '../components/YandexMap'
 
 export default function About() {
@@ -21,39 +22,8 @@ export default function About() {
         <h1 className='section-title'>
             Премиальный центр <span className='text-red'>эстетической медицины,</span> где инновации встречаются с индивидуальным подходом
         </h1>
-        <div className='d-block d-md-flex flex-md-row flex-column justify-content-between'>
-            <div className='h-100 w-100 d-flex justify-content-md-center justify-content-start align-items-center'>
-              <div className=" d-flex flex-column">
-                <h2 className="">
-                  16 <span className='position-absolute t-0 fs-1'>лет</span>
-                </h2>
-                <p>
-                  Безупречного опыта
-                </p>
-              </div>
-            </div>
-            <div className='h-100 w-100 d-flex justify-content-md-center justify-content-start align-items-center'>
-              <div className="d-flex flex-column">
-                <h2>
-                  200 000+
-                </h2>
-                <p>
-                  Довольных клиентов 
-                </p>
-              </div>
-            </div>
-            <div className='h-100 w-100 d-flex justify-content-md-center justify-content-start align-items-center'>
-              <div className="d-flex flex-column">
-                <h2>
-                  30+
-                </h2>
-                <p>
-                  Открытых центров по России 
-                </p>
-              </div>
-            </div>
-          </div>
-          </div>
+        <ShoortInfo />
+      </div>
           <div className="container-fluid">
           <h3 className=''>
             Почему нас выбирают
