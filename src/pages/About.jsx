@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import ShoortInfo from '../components/PageParts/ShortInfo/ShortInfo';
+import Jurisdiction from '../components/PageParts/Jurisdiction/Jurisdiction';
 import YandexMap from '../components/YandexMap'
 
 export default function About() {
@@ -147,6 +148,7 @@ export default function About() {
             <h1 className='section-title'>
               Юридическая информация
             </h1>
+            <Jurisdiction />
           </div>
           <YandexMap />
     </div>
