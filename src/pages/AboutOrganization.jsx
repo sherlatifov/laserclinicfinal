@@ -22,7 +22,7 @@ export default function AboutOrganization() {
                 Мероприятий по улучшению условий труда не требуется.
             </p>
         </div>
-        <div className='row gap-2'>
+        <div className='row gap-1 mt-4'>
             <div className='col-12 col-md-8'>
                 <img src={img1} alt="" className="img-fluid w-100 mb-3" />
             </div>
