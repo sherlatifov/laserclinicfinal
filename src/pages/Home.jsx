@@ -74,15 +74,15 @@ export default function Home() {
         />
          {/* Контент поверх видео */}
         <div className="position-relative z-3">
-          <div className=" d-flex flex-column-reverse flex-sm-row align-items-center justify-content-between h-100">
+          <div className=" d-flex flex-column-reverse flex-md-row align-items-center justify-content-between h-100">
             {/* Текст слева */}
-            <div className="">
-            <div className={`${styles.heroText} px-3 bg-white w-100`}>
-              <h1 className="display-4 fw-bold fs-1 text-dark">Новая эра лазерной косметологии</h1>
-              <p className="lead text-dark fs-5">
+            <div className={`${styles.heroGradient}`}>
+            <div className={`${styles.heroText} px-3 w-100`}>
+              <h1 className="display-4 fw-bold fs-1 text-light">Новая эра лазерной косметологии</h1>
+              <p className="lead text-light fs-5">
                 Используем передовые технологии и опыт экспертов, чтобы помочь вам выглядеть и чувствовать себя лучше каждый день.
               </p>
-              <div className="btn-group flex-column flex-lg-row w-100 gap-2">
+              <div className="btn-group flex-column flex-lg-row w-100 gap-3">
                 <button className="btn btn-danger">Записаться онлайн</button>
                 <button className="btn btn-outline-danger">Записаться онлайн</button>
               </div>

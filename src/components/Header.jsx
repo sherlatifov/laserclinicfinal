@@ -33,6 +33,7 @@ export default function Header() {
             </svg></div>
           </Link>
           <button className="navbar-toggler" type="button" onClick={() => setMenuOpen(!menuOpen)} data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span>Меню</span>
             <span className="me-2">{menuOpen ? <i className="bi bi-x-lg"></i> : <i className="bi bi-list"></i>}</span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">

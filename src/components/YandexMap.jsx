@@ -41,7 +41,7 @@ export default function YandexMap() {
   }, []);
 
   return (
-    <div style={{ position: 'relative' }}>
+  <div style={{ position: 'relative' }}>
   {/* Контейнер карты */}
   <div ref={mapRef} style={{ width: '100%', height: '620px' }} />
 

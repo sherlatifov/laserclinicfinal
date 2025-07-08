@@ -26,18 +26,9 @@
   z-index: 0;
 }
 
-.heroContentWrapper {
-  min-height: 100vh;
-  z-index: 1;
-}
 .heroText {
   max-width: 500px;
   max-height: fit-content;
-}
-
-.heroContent {
-  color: white;
-  padding: 2rem;
 }
 
 .heroContentTitle {
@@ -46,9 +37,27 @@
 }
 
 @media (max-width: 768px) {
+  .heroGradient {
+    position: relative;
+    z-index: 5;
+  }
   .heroContentTitle {
     font-size: 1.8rem;
   }
   .heroText {
+    background-color: white;
+    position: relative;
+    z-index: 3;
+  }
+  .heroGradient::before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    background: linear-gradient(180deg, rgba(246, 245, 246, 0) 0%, #F6F5F6 100%);
+    height: 230px;
+    width: 100%;
+    bottom: 250px;
+    left: 0;
+    z-index: 2;
   }
 }

@@ -37,15 +37,14 @@ export default function About() {
           </h3>
           <div className='row g-3'>
             <div className="col-12 col-lg-6">
-              <div className='card h-100'>
-                <img src={cardImg} className="
-                " alt="..."></img>
-                <div className="card-body d-flex flex-column justify-content-end gap-0">
+              <div className='card'>
+                <img src={cardImg} className="card-img img-fluid" alt="..."></img>
+                <div className="card-img-overlay d-flex flex-column justify-content-end gap-0">
                   <div>
-                    <h3 className='card-title text-white'>
+                    <h3 className='card-title'>
                       Сертифицированное оборудование
                     </h3>
-                    <p className='card-text text-white'>
+                    <p className='card-text'>
                       Используем только качественное медицинское оборудование (Lumenis, Candela) для безопасных и эффективных процедур
                     </p>
                   </div>
