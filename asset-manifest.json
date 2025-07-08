@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/laserclinicfinal/static/css/main.73b6df53.css",
-    "main.js": "/laserclinicfinal/static/js/main.8905f4fd.js",
+    "main.css": "/laserclinicfinal/static/css/main.f1d64cb8.css",
+    "main.js": "/laserclinicfinal/static/js/main.aeae7e97.js",
     "static/js/453.a3c1d153.chunk.js": "/laserclinicfinal/static/js/453.a3c1d153.chunk.js",
     "static/media/bg-hero.mp4": "/laserclinicfinal/static/media/bg-hero.1acd5d049ea6d1554f1b.mp4",
     "static/media/img.png": "/laserclinicfinal/static/media/img.c2eb473b56801fa09e9e.png",
@@ -23,12 +23,12 @@
     "static/media/bootstrap-icons.woff?": "/laserclinicfinal/static/media/bootstrap-icons.1295669cd4e305c97f2c.woff",
     "static/media/bootstrap-icons.woff2?": "/laserclinicfinal/static/media/bootstrap-icons.92ea18a81d737146ff04.woff2",
     "index.html": "/laserclinicfinal/index.html",
-    "main.73b6df53.css.map": "/laserclinicfinal/static/css/main.73b6df53.css.map",
-    "main.8905f4fd.js.map": "/laserclinicfinal/static/js/main.8905f4fd.js.map",
+    "main.f1d64cb8.css.map": "/laserclinicfinal/static/css/main.f1d64cb8.css.map",
+    "main.aeae7e97.js.map": "/laserclinicfinal/static/js/main.aeae7e97.js.map",
     "453.a3c1d153.chunk.js.map": "/laserclinicfinal/static/js/453.a3c1d153.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.73b6df53.css",
-    "static/js/main.8905f4fd.js"
+    "static/css/main.f1d64cb8.css",
+    "static/js/main.aeae7e97.js"
   ]
 }
