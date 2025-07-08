@@ -1,10 +1,14 @@
 .btmFormCard {
-    max-height: 500px;
+    width: 100%;
+    max-width: 100%;
+    max-height: fit-content;
+    height: 100%;
     overflow: hidden;
 }
 .cardImg {
     object-fit: cover;
     max-height: 500px;
+    width: 100%;
     height: 100%;
 }
 .cardGradient {
@@ -20,4 +24,28 @@
     max-height: 500px;
     height: 500px;
     width: 300px;
+}
+
+@media (max-width: 760px) {
+    .cardGradient::before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+    height: 250px;
+    width: 100%;
+    bottom: 150px;
+    left: 0;
+    z-index: 1;
+}
+.cardBody {
+    position: relative;
+    margin-top: -250px;
+    z-index: 1000;
+}
+.cardImg {
+    max-height: 233px;
+    height: 100%;
+    max-width: ;
+}
 }

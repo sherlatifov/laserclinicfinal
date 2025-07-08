@@ -52,12 +52,12 @@ const Footer = () => {
                         </li>
                     <li className="px-4">
                         <div className={`${styles.footerSocials} d-flex gap-3 justify-content-center w-100 w-lg-auto`}>
-                            <a href="http://vk.com" className="d-flex align-items-center justify-content-center p-3 w-50">
+                            <a href="http://vk.com" className="d-flex align-items-center justify-content-center p-3 w-100">
                                 <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M11.0924 12.7634C4.25918 12.7634 0.361617 7.9859 0.199219 0.0361328H3.62208C3.73451 5.87106 6.25793 8.34262 8.25668 8.85222V0.0361328H11.4797V5.06844C13.4534 4.85186 15.5271 2.55866 16.2267 0.0361328H19.4497C19.1861 1.34438 18.6606 2.58309 17.9061 3.67477C17.1517 4.76645 16.1844 5.68762 15.0649 6.38066C16.3146 7.01391 17.4183 7.91022 18.3033 9.01045C19.1883 10.1107 19.8345 11.3898 20.1992 12.7634H16.6514C16.3241 11.5703 15.6587 10.5023 14.7387 9.69325C13.8187 8.88417 12.685 8.37002 11.4797 8.21522V12.7634H11.0924Z" fill="white"/>
                                 </svg>
                             </a>
-                            <a href="http://youtube.com" className='d-flex align-items-center justify-content-center p-3 w-50'>
+                            <a href="http://youtube.com" className='d-flex align-items-center justify-content-center p-3 w-100'>
                                 <svg width="21" height="14" viewBox="0 0 21 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M8.48844 9.58611V3.9743C10.4806 4.91173 12.0236 5.81731 13.8485 6.79363C12.3433 7.62835 10.4806 8.56492 8.48844 9.58611ZM19.591 1.18328C19.2474 0.730524 18.6617 0.378089 18.0381 0.261409C16.2053 -0.0866411 4.77099 -0.0876311 2.93915 0.261409C2.43911 0.355149 1.99384 0.581732 1.61133 0.933772C-0.000362515 2.42967 0.504666 10.4517 0.893147 11.7512C1.05651 12.3136 1.26769 12.7193 1.53365 12.9855C1.87631 13.3376 2.34547 13.58 2.88436 13.6887C4.39345 14.0008 12.168 14.1753 18.0062 13.7355C18.5441 13.6418 19.0202 13.3916 19.3958 13.0246C20.8859 11.5347 20.7843 3.06213 19.591 1.18328Z" fill="white"/>
                                 </svg>

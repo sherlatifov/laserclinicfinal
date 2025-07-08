@@ -54,14 +54,20 @@ export default function FAQ() {
         <div className='d-flex flex-column gap-5 mt-3 mt-lg-5'>
             <Collapse items={faqData} />
         </div>
-        <div class={` ${styles.btmFormCard} card mt-5`}>
-            <div class="row g-0 d-flex align-items-center flex-column-reverse position-relative">
+        <div class={` ${styles.btmFormCard} card mt-5 h-100`}>
+            <div class="row g-0 d-flex align-items-center flex-md-row flex-column-reverse">
                 <div class="col-12 col-md-6 h-100">
-                    <div class="card-body">
-                        <h5 class="card-title fs-2 fw-semibold">Остались вопросы?</h5>
-                        <p class="card-text fs-5 fw-semibold">Задайте их, и мы постараемся как можно быстрее ответить</p>
-                        <form action="">
-                            <div className="row g-2">
+                    <div className={`${styles.cardBody} card-body`}>
+                        <div className="d-md-block d-none">
+                            <h5 class="card-title fs-2 fw-semibold">Остались вопросы?</h5>
+                            <p class="card-text fs-5 fw-semibold">Задайте их, и мы постараемся как можно быстрее ответить</p>
+                        </div>
+                        <div className='d-block d-md-none'>
+                            <h5 class="card-title fs-1 fw-bold">Задайте вопрос специалисту</h5>
+                            <p class="card-text fs-5 fw-semibold">Анастасия Михайловна ответит на все ваши вопросы</p>
+                        </div>
+                        <form action="d-flex">
+                            <div className="row g-2 mt-2">
                                 <div className="col-12 col-lg">
                                     <input type="text" className='form-control w-100' placeholder='Ваше имя' />
                                 </div>
@@ -74,8 +80,8 @@ export default function FAQ() {
                                 <div>
                                     <p className='text-secondary fw-medium'>Отправляя форму, Вы соглашаетесь <Link className='text-dark fw-medium' to='/policy'>с Политикой конфиденциальности</Link></p>
                                 </div>
-                                <div className='col-12'>
-                                    <input type="submit" className='btn-red' />
+                                <div className='d-flex flex-column flex-lg-row'>
+                                    <input type="submit" className='btn-red w-auto' />
                                 </div>
                             </div>
                         </form>
@@ -83,7 +89,7 @@ export default function FAQ() {
                 </div>
                 <div class="col-12 col-md-6 position-relative">
                     <div className={`${styles.cardGradient}`}>
-                        <img src={cardImg} className={` ${styles.cardImg} img-fluid w-100`} alt="..." />
+                        <img src={cardImg} className={` ${styles.cardImg} img-fluid w-100 h-100`} alt="..." />
                     </div>
                 </div>
             </div>

@@ -61,7 +61,7 @@ export default function Home() {
     },
   ];
   return (
-    <div>
+    <div className='mt-5'>
       <div className={`${styles.hero} position-relative`}>
         {/* Видео-фон */}
         <video
@@ -73,29 +73,31 @@ export default function Home() {
           playsInline
         />
          {/* Контент поверх видео */}
-        <div className="position-relative z-3 h-100">
-          <div className="row d-flex flex-column-reverse flex-lg-row align-items-center h-100">
+        <div className="position-relative z-3">
+          <div className=" d-flex flex-column-reverse flex-sm-row align-items-center justify-content-between h-100">
             {/* Текст слева */}
-            <div className={`${styles.heroText} col-md-6 bg-white py-5`}>
-              <h1 className="display-4 fw-bold text-dark">Новая эра лазерной косметологии</h1>
-              <p className="lead text-dark">
+            <div className="">
+            <div className={`${styles.heroText} px-3 bg-white w-100`}>
+              <h1 className="display-4 fw-bold fs-1 text-dark">Новая эра лазерной косметологии</h1>
+              <p className="lead text-dark fs-5">
                 Используем передовые технологии и опыт экспертов, чтобы помочь вам выглядеть и чувствовать себя лучше каждый день.
               </p>
-              <div className="btn-group flex-column w-100 gap-2">
+              <div className="btn-group flex-column flex-lg-row w-100 gap-2">
                 <button className="btn btn-danger">Записаться онлайн</button>
                 <button className="btn btn-outline-danger">Записаться онлайн</button>
               </div>
             </div>
-
+            </div>
             {/* Фото справа, прижатое к низу */}
-            <div className="col-md-6 d-flex justify-content-end align-items-center-end w-100 h-100">
+            <div className="col-md-6 d-flex justify-content-end align-items-center-end">
               <img
                 src={personImg}
                 alt="Доктор"
                 className="hero-person-img img-fluid h-100"
               />
             </div>
-          </div>
+
+            </div>
         </div>
       </div>
 

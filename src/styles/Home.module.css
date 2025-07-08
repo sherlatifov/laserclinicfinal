@@ -1,6 +1,7 @@
 .hero {
   position: relative;
   width: 100%;
+  max-height: fit-content;
   height: 900px;
   overflow: hidden;
   z-index: 0;
@@ -30,6 +31,8 @@
   z-index: 1;
 }
 .heroText {
+  max-width: 500px;
+  max-height: fit-content;
 }
 
 .heroContent {
@@ -46,8 +49,6 @@
   .heroContentTitle {
     font-size: 1.8rem;
   }
-
-  .heroContent {
-    padding: 1rem;
+  .heroText {
   }
 }
