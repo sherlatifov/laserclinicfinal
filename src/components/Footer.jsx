@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="mt-auto d-flex flex-column w-100" style={{background: `radial-gradient(50% 50% at 50% 50%, #3D3C3D 0%, #262626 100%), #FFFFFF`}}>
         <div className="container-fluid">
-            <div className="navbar navbar-expand-lg">
+            <div className="navbar navbar-expand-lg py-0 pb-3 py-lg-4">
                 <ul className="navbar-nav align-items-lg-center justify-content-between w-100">
                     <div className='d-flex flex-column flex-lg-row align-items-lg-center gap-4 mt-lg-0 mt-3'>
                         <li className=" text-center">
@@ -41,18 +41,18 @@ const Footer = () => {
                     </div>
                     <div className='d-flex flex-column flex-lg-row align-items-lg-center gap-3 mt-3 mt-lg-0'>
                         <li className='text-center'>
-                            <Link className='text-white border-end px-4'>
+                            <Link className='text-white border-end px-4 fs-5 fw-semibold'>
                                 +7 (958) 760-32-85
                             </Link>
                         </li>
                         <li className='text-center'>
-                            <Link className='text-white border-end px-4'>
+                            <Link className='text-white border-end px-4 fs-5 fw-semibold'>
                                 lazerklinick@yandex.ru
                             </Link>
                         </li>
                     <li className="px-4">
                         <div className={`${styles.footerSocials} d-flex gap-3 justify-content-center w-100 w-lg-auto`}>
-                            <a href="http://vk.com" className="d-flex align-items-center justify-content-center w-50">
+                            <a href="http://vk.com" className="d-flex align-items-center justify-content-center p-3 w-50">
                                 <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M11.0924 12.7634C4.25918 12.7634 0.361617 7.9859 0.199219 0.0361328H3.62208C3.73451 5.87106 6.25793 8.34262 8.25668 8.85222V0.0361328H11.4797V5.06844C13.4534 4.85186 15.5271 2.55866 16.2267 0.0361328H19.4497C19.1861 1.34438 18.6606 2.58309 17.9061 3.67477C17.1517 4.76645 16.1844 5.68762 15.0649 6.38066C16.3146 7.01391 17.4183 7.91022 18.3033 9.01045C19.1883 10.1107 19.8345 11.3898 20.1992 12.7634H16.6514C16.3241 11.5703 15.6587 10.5023 14.7387 9.69325C13.8187 8.88417 12.685 8.37002 11.4797 8.21522V12.7634H11.0924Z" fill="white"/>
                                 </svg>
@@ -183,8 +183,41 @@ const Footer = () => {
                             </li>
                             ))}
                         </ul>
-                    </div>  
+                    </div> 
                 </div>
+                <div className={` ${styles.footerCard} d-block d-md-none mt-4`}>
+                        <div type="button" data-bs-toggle="collapse" data-bs-target="#footerAdresses" aria-expanded="false" aria-controls="footerAdresses">
+                            <h2>Адреса в Краснодаре <span className='text-secondary'>16</span></h2>
+                        </div> 
+                        <div class="collapse" id="footerAdresses">
+                            <div className={` ${styles.footerCard}`}>
+                                <ul className={`${styles.footerNav} list-unstyled row align-items-start`}>
+                                    {[
+                                    "1 Мая, 186",
+                                    "Бочарникова 1",
+                                    "Восточно-Кругликовская, 30",
+                                    "Душистая 77, к 1",
+                                    "Западный Обход 39/2, к 7",
+                                    "Зиповская 31",
+                                    "Игнатова 10/1",
+                                    "Красная, 160",
+                                    "Кубанская Набережная,130",
+                                    "Платановый бульвар, 3",
+                                    "Сормовская 122",
+                                    "Ставропольская, 110/1",
+                                    "ул. Петра Метальникова 28",
+                                    "Уральская 75 к 2",
+                                    "Чернобыльцев, 1",
+                                    "респ. Адыгея, пгт. Яблоновский, ул. Гагарина 157а"
+                                    ].map((address, i) => (
+                                    <li key={i} className="col-12">
+                                        <Link className='bg-transparent'>{address}</Link>
+                                    </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
             </div>
         </div>
         <div className="container-fluid">

@@ -8,9 +8,9 @@ export default function Header() {
 
   return (
     <header className={`${styles.header} ${menuOpen ? styles.navExpanded : 'bg-white'}`}>
-      <nav className="navbar navbar-expand-lg py-4">
+      <nav className="navbar navbar-expand-xxl py-4">
         <div className="container-fluid">
-          <Link className="navbar-brand ">
+          <Link className="navbar-brand" to='/'>
             <div className="d-block"><svg width="220" height="18" viewBox="0 0 220 18" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_356_2412)">
               <path d="M18.1085 16.4985C18.1085 16.8109 18.0015 17.0779 17.7877 17.2996C17.5738 17.5219 17.3109 17.6328 16.9983 17.6328H14.7044C14.3921 17.6328 14.1251 17.5219 13.9031 17.2996C13.681 17.0779 13.57 16.8109 13.57 16.4985V3.77156H10.6351C9.86198 3.77156 9.18793 3.98962 8.6124 4.42521C8.03692 4.86097 7.65063 5.44861 7.45334 6.18867L4.69056 16.4985C4.60856 16.8273 4.42782 17.0987 4.14817 17.312C3.86852 17.526 3.5725 17.6328 3.26028 17.6328H0.818554C0.539073 17.6328 0.321019 17.5302 0.165089 17.3248C0.00880742 17.1189 -0.0365989 16.8848 0.0292226 16.6217L3.08764 5.05403C3.9097 1.92978 6.57352 0.367708 11.0788 0.367708H17.0971C17.3765 0.367708 17.615 0.482595 17.8121 0.713184C18.0094 0.943367 18.1085 1.20648 18.1085 1.50231V16.4985Z" fill="#464344"/>
@@ -33,40 +33,39 @@ export default function Header() {
             </svg></div>
           </Link>
           <button className="navbar-toggler" type="button" onClick={() => setMenuOpen(!menuOpen)} data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            Меню
-            <span className="navbar-toggler-icon ms-2"></span>
+            <span className="me-2">{menuOpen ? <i className="bi bi-x-lg"></i> : <i className="bi bi-list"></i>}</span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav gap-4 mt-2 ms-3 me-auto">
+            <ul className="navbar-nav me-auto gap-3 mt-5 mt-xxl-0">
               <li className='nav-item'>
-                <NavLink className="fs-6 fw-medium text-dark" to="/">
+                <NavLink className={` ${styles.navLink} ${styles.servicesBtn} `} to="/">
                   Услуги
                   <span className="navbar-toggler-icon ms-2"></span>
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="fs-6 fw-medium text-dark" to="/specialists">Специалисты</NavLink>
+                <NavLink className={` ${styles.navLink} ${menuOpen ? 'text-light' : styles.navLink}`} to="/specialists">Специалисты</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="fs-6 fw-medium text-dark" to="/about">О клинике</NavLink>
+                <NavLink className={` ${styles.navLink} ${menuOpen ? 'text-light' : styles.navLink} `} to="/about">О клинике</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="fs-6 fw-medium text-dark" to="/blog">Блог</NavLink>
+                <NavLink className={` ${styles.navLink} ${menuOpen ? 'text-light' : styles.navLink}`} to="/blog">Блог</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="fs-6 fw-medium text-dark" to="/reviews">Отзывы</NavLink>
+                <NavLink className={` ${styles.navLink} ${menuOpen ? 'text-light' : styles.navLink}`} to="/reviews">Отзывы</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="fs-6 fw-medium text-dark" to="/discount">Акции и скидки</NavLink>
+                <NavLink className={` ${styles.navLink} ${menuOpen ? 'text-light' : styles.navLink}`} to="/discount">Акции и скидки</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="fs-6 fw-medium text-dark" to="/contacts">Контакты</NavLink>
+                <NavLink className={` ${styles.navLink} ${menuOpen ? 'text-light' : styles.navLink}`} to="/contacts">Контакты</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="fs-6 fw-medium text-dark" to="/faq">FAQ</NavLink>
+                <NavLink className={` ${styles.navLink} ${menuOpen ? 'text-light' : styles.navLink}`} to="/faq">FAQ</NavLink>
               </li>
             </ul>
-            <ul className='navbar-nav gap-2'>
+            <ul className='navbar-nav gap-3 mt-4 mt-xxl-0'>
               <li className="nav-item">
                 <div className="input-group">
                     <span class="input-group-text border border-secondary border-end-0 bg-white" id="icon-select">
@@ -75,7 +74,7 @@ export default function Header() {
                           <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="#99A9C1" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </span>
-                    <select className="ps-0 form-control form-select form-select-lg border border-secondary border-start-0 fw-medium fs-6" aria-label="Large select example">
+                    <select className="ps-0 form-control form-select border border-secondary border-start-0 fw-medium fs-6" aria-label="Large select example">
                         <option selected>Краснодар</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
@@ -90,7 +89,7 @@ export default function Header() {
                         <path d="M8 6H21M8 12H21M8 18H21M3 6H3.01M3 12H3.01M3 18H3.01" stroke="#99A9C1" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </span>
-                    <select className="ps-0 form-control form-select form-select-lg border border-secondary border-start-0 fw-medium fs-6" aria-label="Large select example">
+                    <select className="ps-0 form-control form-select border border-secondary border-start-0 fw-medium fs-6" aria-label="Large select example">
                         <option selected>Адреса клиник</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
@@ -99,7 +98,7 @@ export default function Header() {
                 </div>
               </li>
               <li className="nav-item">
-                <NavLink className="btn btn-lg btn-dark px-4 py-1 w-100 border border-2 border-dark" to="/acount">Войти</NavLink>
+                <NavLink className={`${menuOpen ? 'btn-light' : 'btn-light'} btn btn-dark px-4 py-1 w-100 border border-3 border-dark`} to="/acount">Войти</NavLink>
               </li>
             </ul>
           </div>

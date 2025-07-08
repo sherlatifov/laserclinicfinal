@@ -1,11 +1,14 @@
 import { Link } from 'react-router-dom';
+import cardImg from '../assets/about/cardImg.png'
+
+import AboutCarousel from '../components/Sliders/AboutCarousel';
 import ShoortInfo from '../components/PageParts/ShortInfo/ShortInfo';
 import Jurisdiction from '../components/PageParts/Jurisdiction/Jurisdiction';
 import YandexMap from '../components/YandexMap'
 
 export default function About() {
   return (
-    <div>
+    <div className='my-5'>
       <div className='container-fluid'>
         <h1 className='section-title'>
             О Лазер Клиник
@@ -18,6 +21,9 @@ export default function About() {
               Мы стремимся к индивидуальному подходу к каждому клиенту, уделяя внимание всем нюансам и пожеланиям. Мы понимаем, что красота и здоровье — это два неразрывно связанных аспекта, и наши косметологи работают на результат.
             </p>
         </div>
+      </div>
+      <div className='container-fluid'>
+        <AboutCarousel />
       </div>
       <div className="container-fluid">
         <h1 className='section-title'>
@@ -32,6 +38,8 @@ export default function About() {
           <div className='row g-3'>
             <div className="col-12 col-lg-6">
               <div className='card h-100'>
+                <img src={cardImg} className="
+                " alt="..."></img>
                 <div className="card-body d-flex flex-column justify-content-end gap-0">
                   <div>
                     <h3 className='card-title text-white'>

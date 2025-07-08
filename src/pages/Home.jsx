@@ -106,7 +106,7 @@ export default function Home() {
 
 
 
-        <div className='container-fluid'>
+        <div className='container-fluid my-5'>
           <h1 className='section-title'>
             Современные методики и опытный персонал для вашей красоты
           </h1>
@@ -115,89 +115,92 @@ export default function Home() {
           </p>
         </div>
 
-      <div className="row g-0" style={{ maxHeight: '600px', overflow: 'hidden' }}>
-  {/* Левая сторона */}
-  <div className="col-4">
-    <div className="card h-100">
-      <img src={img1} alt="" className="img-fluid h-100 object-fit-cover" />
-      <div className="card-img-overlay text-white bg-dark bg-opacity-50">
-        <h5 className="card-title">Card title</h5>
-        <p className="card-text">Описание левой карточки</p>
-        <p className="card-text"><small>Обновлено 3 мин назад</small></p>
-      </div>
-    </div>
-  </div>
-
-  {/* Правая сторона */}
-  <div className="col-8 d-flex flex-column justify-content-between h-100">
-    {/* Верхняя строка */}
-    <div className="row  flex-grow-1">
-      <div className="col-4">
-        <div className="card h-50">
-          <img src={img1} alt="" className="img-fluid h-100 object-fit-cover" />
-          <div className="card-img-overlay text-white bg-dark bg-opacity-50">
-            <h5 className="card-title">Card title</h5>
-            <p className="card-text">Правая верхняя левая</p>
-          </div>
-        </div>
-      </div>
-      <div className="col">
-        <div className="card h-50">
-          <img src={img1} alt="" className="img-fluid h-100 object-fit-cover" />
-          <div className="card-img-overlay text-white bg-dark bg-opacity-50">
-            <h5 className="card-title">Card title</h5>
-            <p className="card-text">Правая верхняя правая</p>
-          </div>
+        <div className="row g-0" style={{ maxHeight: '600px', overflow: 'hidden' }}>
+    {/* Левая сторона */}
+    <div className="col-4">
+      <div className="card h-100">
+        <img src={img1} alt="" className="img-fluid h-100 object-fit-cover" />
+        <div className="card-img-overlay text-white bg-dark bg-opacity-50">
+          <h5 className="card-title">Card title</h5>
+          <p className="card-text">Описание левой карточки</p>
+          <p className="card-text"><small>Обновлено 3 мин назад</small></p>
         </div>
       </div>
     </div>
 
-    {/* Нижняя строка */}
-    <div className="row flex-grow-1">
-      <div className="col">
-        <div className="card h-100">
-          <img src={img1} alt="" className="img-fluid  object-fit-cover" />
-          <div className="card-img-overlay text-white bg-dark bg-opacity-50">
-            <h5 className="card-title">Card title</h5>
-            <p className="card-text">Правая верхняя правая</p>
+    {/* Правая сторона */}
+    <div className="col-8 d-flex flex-column justify-content-between h-100">
+      {/* Верхняя строка */}
+      <div className="row  flex-grow-1">
+        <div className="col-4">
+          <div className="card h-50">
+            <img src={img1} alt="" className="img-fluid h-100 object-fit-cover" />
+            <div className="card-img-overlay text-white bg-dark bg-opacity-50">
+              <h5 className="card-title">Card title</h5>
+              <p className="card-text">Правая верхняя левая</p>
+            </div>
+          </div>
+        </div>
+        <div className="col">
+          <div className="card h-50">
+            <img src={img1} alt="" className="img-fluid h-100 object-fit-cover" />
+            <div className="card-img-overlay text-white bg-dark bg-opacity-50">
+              <h5 className="card-title">Card title</h5>
+              <p className="card-text">Правая верхняя правая</p>
+            </div>
           </div>
         </div>
       </div>
-      <div className="col">
-        <div className="card">
-          <img src={img1} alt="" className="img-fluid h-100 object-fit-cover" />
-          <div className="card-img-overlay text-white bg-dark bg-opacity-50">
-            <h5 className="card-title">Card title</h5>
-            <p className="card-text">Правая верхняя правая</p>
+
+      {/* Нижняя строка */}
+      <div className="row flex-grow-1">
+        <div className="col">
+          <div className="card h-100">
+            <img src={img1} alt="" className="img-fluid  object-fit-cover" />
+            <div className="card-img-overlay text-white bg-dark bg-opacity-50">
+              <h5 className="card-title">Card title</h5>
+              <p className="card-text">Правая верхняя правая</p>
+            </div>
+          </div>
+        </div>
+        <div className="col">
+          <div className="card">
+            <img src={img1} alt="" className="img-fluid h-100 object-fit-cover" />
+            <div className="card-img-overlay text-white bg-dark bg-opacity-50">
+              <h5 className="card-title">Card title</h5>
+              <p className="card-text">Правая верхняя правая</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
+        </div>
 
 
-        <div>
+        <div className='container-fluid my-5'>
           <h1 className='section-title'>
             Качественные медицинские услуги с заботой о вашей красоте
           </h1>
         </div>
-        <div>
+        <div className='bg-dark text-light'>
           <h1 className='section-title'>
             Специальные предложения для вашей красоты
           </h1>
 
         </div>
+        <div>
+
+        </div>
         <div className='py-5'>
           <div className="container-fluid">
-            <h1 className='section-title'>
+            <h1 className='section-title my-5'>
               Все, что вы хотели спросить – коротко и ясно
             </h1>
             <div className='d-flex flex-column gap-5'>
                 <Collapse items={faqData} />
             </div>
           <div className='text-center mt-5'>
-              <Link className='btn btn-dark'>
+              <Link className='btn btn-dark' to='/faq'>
                 Смотреть все вопросы
               </Link>
           </div>

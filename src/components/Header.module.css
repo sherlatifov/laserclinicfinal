@@ -9,13 +9,17 @@
   background: radial-gradient(50% 50% at 50% 50%, #3D3C3D 0%, #262626 100%);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
 .navLink {
     font-weight: 500;
     font-style: normal;
-    font-size: clamp(1rem, 1vw, 64px);
+    font-size: 1rem;
     letter-spacing: 0%;
     color: rgba(34, 34, 34, 1);
+}
+.servicesBtn {
+  padding: 10px 24px;
+  background-color: rgba(246, 245, 246, 1);
+  border-radius: 8px;
 }
 .signInBtn {
     padding: 10px 24px;
@@ -27,4 +31,9 @@
     font-size: 1rem;
     line-height: 20px;
     letter-spacing: 0%;
+}
+@media (max-width: 1600px) {
+  .navLink {
+    font-size: 0.825rem;
+  }
 }

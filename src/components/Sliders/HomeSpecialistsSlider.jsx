@@ -2,38 +2,7 @@ import { useEffect } from 'react';
 import styles from './Collapse.module.css'
 
 export default function Collapse({ items }) {
-    useEffect(() => {
-    const collapseEls = document.querySelectorAll('.collapse');
     
-
-    collapseEls.forEach((collapseEl) => {
-      
-      const card = collapseEl.closest('.card');
-      if (!card) return;
-      const icon = card.querySelector('i');
-      const span = card.querySelector('span');
-
-      collapseEl.addEventListener('show.bs.collapse', () => {
-        card.classList.add('text-white');
-        card.style.background = 'rgba(198, 38, 40, 1)';
-        span.style.background = 'rgba(255, 255, 255, 0.2)';
-        if (icon) {
-          icon.classList.remove('bi','bi-plus');
-          icon.classList.add('bi', 'bi-dash');
-        }
-      });
-
-      collapseEl.addEventListener('hide.bs.collapse', () => {
-        card.classList.remove('bg-danger', 'text-white');
-        card.style.background = 'rgba(255, 255, 255, 1)';
-        span.style.background = 'rgba(231, 230, 231, 1)';
-        if (icon) {
-          icon.classList.remove('bi', 'bi-dash');
-          icon.classList.add('bi','bi-plus');
-        }
-      });
-    });
-  }, []);
   return (
     <>
       {items.map((item, index) => {
