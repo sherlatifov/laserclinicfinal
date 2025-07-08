@@ -11,7 +11,7 @@ export default function Specialists() {
         firstName: "Анастасия",
         lastName: "Литвинова",
         specialty: "Врач-дерматовенеролог, косметолог",
-        image: "/images/specialists/img1.png",
+        image: "images/specialists/img1.png",
     },
     {
         id: 2,
@@ -94,12 +94,11 @@ export default function Specialists() {
   return (
     <div className='container-fluid py-5'>
         <h1 className='section-title'>Специалисты</h1>
-        <div className='row'>
-            <div className='col-12 col-lg-6'>
-                <div className="card rounded-4 w-100 h-100">
-                    <div className="card-body px-1 py-1 w-auto">
-                        <ul className="nav nav-pills">
-                            <li className="nav-item">
+        <nav className='d-flex justify-content-between w-100 flex-column flex-lg-row mt-5'>
+                <div className="card rounded-4">
+                    <div className="card-body px-0 py-1">
+                        <ul className="nav mx-0 nav-pills d-flex align-items-center justify-content-around">
+                            <li className="nav-item ">
                                 <button
                                     className={`nav-link rounded text-dark fw-medium ${activeTab === 'home' ? 'bg-secondary-subtle' : ''}`}
                                     onClick={() => setActiveTab('home')}
@@ -126,10 +125,8 @@ export default function Specialists() {
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div className="col-12 col-lg-6 h-100">
-                <ul className='navbar-nav flex-column-reverse flex-md-row list-unstyled gap-3 w-auto h-100'>
-                    <li className='nav-item w-100'>
+                <ul className='d-flex flex-column-reverse flex-lg-row list-unstyled gap-3 mt-3 mt-lg-0'>
+                    <li className='nav-item'>
                         <div className="input-group">
                             <span className="input-group-text border border-secondary border-end-0 bg-transparent" id="icon-select">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -140,12 +137,12 @@ export default function Specialists() {
                             <select className="ps-0 form-control form-select border border-secondary border-start-0 fw-medium fs-6 bg-transparent" aria-label="Large select example">
                                 <option selected>Краснодар</option>
                                 <option value="1">One</option>
-                                <option value="2">Two</option>
+                                <option value="2">Two</option>  
                                 <option value="3">Three</option>
                             </select>
                         </div>
                     </li>
-                    <li className='nav-item w-100'>
+                    <li className='nav-item'>
                         <div className='input-group'>
                             <form className="d-flex input-group" role="search">
                                 <input className="form-control border border-secondary border-end-0 bg-transparent fs-small fw-medium" type="search" placeholder="Поиск" aria-label="Search"/>
@@ -156,8 +153,7 @@ export default function Specialists() {
                         </div>
                     </li>
                 </ul>
-            </div>
-        </div>
+        </nav>
         <div className="row g-4 mt-3">
             {profiles.map((profile) => (
             <div className="col-12 col-sm-6 col-lg-3" key={profile.id}>
@@ -165,27 +161,6 @@ export default function Specialists() {
             </div>
             ))}
         </div>
-        <nav aria-label="Page navigation example" className='d-flex justify-content-center mt-5'>
-            <ul className="pagination pagination-lg">
-                <li className="page-item me-4">
-                    <a className="page-link page-link-arrow px-3" href="#" aria-label="Previous">
-                        <i className="bi bi-chevron-left"></i>
-                    </a>
-                </li>
-                <li className="page-item"><a className="page-link active-pagination" href="#">1</a></li>
-                <li className="page-item"><a className="page-link" href="#">2</a></li>
-                <li className="page-item"><a className="page-link" href="#">3</a></li>
-                <li className="page-item"><a className="page-link" href="#">4</a></li>
-                <li className="page-item"><a className="page-link" href="#">5</a></li>
-                <li className="page-item"><a className="page-link" href="#">6</a></li>
-                <li className="page-item"><a className="page-link" href="#">7</a></li>
-                <li className="page-item ms-4">
-                    <a className="page-link page-link-arrow px-3" href="#" aria-label="Next">
-                        <i className="bi bi-chevron-right"></i>
-                    </a>
-                </li>
-            </ul>
-        </nav>
     </div>
   );
 };

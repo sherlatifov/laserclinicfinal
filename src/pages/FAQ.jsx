@@ -48,24 +48,24 @@ export default function FAQ() {
         <h2 className='section-title'>
             Ответы на вопросы
         </h2>
-        <div className="row justify-content-end">
-                <input type="text" />
+        <div className="d-flex flex-column flex-lg-row justify-content-end mt-3 mt-lg-5">
+            <input type="text" className='form-control w-auto bg-transparent' placeholder='Поиск'/>
         </div>
-        <div className='d-flex flex-column gap-5'>
+        <div className='d-flex flex-column gap-5 mt-3 mt-lg-5'>
             <Collapse items={faqData} />
         </div>
         <div class={` ${styles.btmFormCard} card mt-5`}>
-            <div class="row g-0 d-flex align-items-center">
+            <div class="row g-0 d-flex align-items-center flex-column-reverse position-relative">
                 <div class="col-12 col-md-6 h-100">
                     <div class="card-body">
                         <h5 class="card-title fs-2 fw-semibold">Остались вопросы?</h5>
                         <p class="card-text fs-5 fw-semibold">Задайте их, и мы постараемся как можно быстрее ответить</p>
                         <form action="">
                             <div className="row g-2">
-                                <div className="col">
+                                <div className="col-12 col-lg">
                                     <input type="text" className='form-control w-100' placeholder='Ваше имя' />
                                 </div>
-                                <div className="col">
+                                <div className="col-12 col-lg">
                                     <input type="phone" className='form-control w-100' placeholder='Телефон' />
                                 </div>
                                 <div className='col-12'>
