@@ -9,7 +9,7 @@ export default function Blog() {
         blogDate: "15 апреля 2025",
         author: "Марина Васюкова",
         authorImg: "report@laserclinic.ru",
-        image: "/images/blog/blogImg/img-1.png",
+        image: "images/blog/blogImg/img-1.png",
     },
     {
         id: 2,
@@ -17,7 +17,7 @@ export default function Blog() {
         blogDate: "1 декабря 2024 – 15 января 2025",
         author: "Марина Васюкова",
         authorImg: "report@laserclinic.ru",
-        image: "/images/blog/blogImg/img-2.png",
+        image: "images/blog/blogImg/img-2.png",
     },
     {
         id: 3,
@@ -25,7 +25,7 @@ export default function Blog() {
         blogDate: "20 декабря 2023",
         author: "Марина Васюкова",
         authorImg: "report@laserclinic.ru",
-        image: "/images/blog/blogImg/img-3.png",
+        image: "images/blog/blogImg/img-3.png",
     },
     {
         id: 3,
@@ -33,7 +33,7 @@ export default function Blog() {
         blogDate: "5 ноября 2024",
         author: "Марина Васюкова",
         authorImg: "report@laserclinic.ru",
-        image: "/images/blog/blogImg/img-4.png",
+        image: "images/blog/blogImg/img-4.png",
     },
     ];
   return (
